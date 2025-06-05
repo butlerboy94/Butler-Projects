@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- Declares the document type and version of HTML to ensure correct rendering -->
+<html lang="en">
+<!-- Root element of the HTML document, language set to English -->
+<head>
+  <!-- Metadata about the document -->
+  <meta charset="UTF-8">
+  <!-- Character encoding ensures proper display of text -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Responsive design: sets viewport width and initial scale -->
+  <title>Google</title>
+  <!-- Title shown in browser tab -->
+  <style>
+    /* Global styles for the entire page */
+    body {
+      margin: 0;                   /* Remove default page margins */
+      font-family: Arial, sans-serif; /* Set default font for text */
+      background-color: #fff;      /* Page background color */
+      color: #202124;              /* Default text color */
+      display: flex;               /* Use flexbox for centering */
+      flex-direction: column;      /* Stack elements vertically */
+      align-items: center;         /* Center items horizontally */
+      justify-content: center;     /* Center items vertically */
+      height: 100vh;               /* Full viewport height */
+    }
+
+    /* Applies margin to the bottom of the Google logo image to create space between it and the search box */
+    .logo {
+      margin-bottom: 30px;         /* Space below the logo */
+    }
+
+    /* Styles the search box container to resemble Google's input field */
+    .search-box {
+      display: flex;               /* Align input and potential icons */
+      align-items: center;         /* Vertically center content */
+      width: 100%;                 /* Take full available width */
+      max-width: 584px;            /* Limit maximum width */
+      height: 44px;                /* Fixed height for consistency */
+      border: 1px solid #dfe1e5;   /* Light gray border */
+      border-radius: 24px;         /* Rounded corners */
+      padding: 0 15px;             /* Horizontal padding */
+      box-shadow: none;            /* No shadow to match Google style */
+    }
+
+    /* Styles the text input inside the search box */
+    .search-box input {
+      flex: 1;                     /* Allow input to fill available space */
+      border: none;                /* Remove default input border */
+      outline: none;               /* Remove focus outline */
+      font-size: 16px;             /* Comfortable reading size */
+    }
+
+    /* Container for the two action buttons */
+    .buttons {
+      margin-top: 30px;            /* Space above buttons */
+      display: flex;               /* Lay buttons side by side */
+      gap: 10px;                   /* Space between buttons */
+    }
+
+    /* Styles for both buttons */
+    .buttons input {
+      font-size: 14px;             /* Button text size */
+      padding: 10px 20px;          /* Vertical and horizontal padding */
+      border: 1px solid #f8f9fa;   /* Match Google's light button border */
+      background-color: #f8f9fa;   /* Button background color */
+      border-radius: 4px;          /* Slightly rounded corners */
+      cursor: pointer;             /* Pointer cursor on hover */
+    }
+
+    /* Hover effect for buttons */
+    .buttons input:hover {
+      border: 1px solid #dadce0;   /* Darker border on hover */
+      background-color: #f1f3f4;   /* Slightly darker background */
+    }
+  </style>
+</head>
+<body>
+  <!-- Google logo at the top of the page -->
+  <img
+    src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+    alt="Google"
+    class="logo"
+    width="272"
+    height="92"
+  >
+
+  <!-- Search box container -->
+  <div class="search-box">
+    <!-- Text input for search queries -->
+    <input
+      type="text"
+      placeholder="Search Google or type a URL"
+    >
+  </div>
+
+  <!-- Buttons container -->
+  <div class="buttons">
+    <!-- 'Google Search' action button (no real functionality) -->
+    <input type="button" value="Google Search">
+    <!-- 'I'm Feeling Lucky' action button (no real functionality) -->
+    <input type="button" value="I'm Feeling Lucky">
+  </div>
+</body>
+</html>
