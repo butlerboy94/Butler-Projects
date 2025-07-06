@@ -6,7 +6,7 @@ Welcome! I'm **Kaleb Butler**, a 31-year-old aspiring software developer current
 
 ## 🧠 Skills in Progress
 
-- 💻 **Languages:** Python, Java, C++, HTML/CSS
+- 💻 **Languages:** Python, Java, C++, HTML/CSS, C#
 - 🧰 **Tools & Tech:** Git & GitHub, VS Code, Java Swing, Basic Web Development
 - 📘 **Currently Learning:** Data structures, object-oriented programming, full-stack basics, and problem-solving techniques
 
