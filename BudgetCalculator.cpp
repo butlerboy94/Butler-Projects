@@ -14,6 +14,7 @@ int main(){
     double transportation = 0.0;
     double fun = 0.0;
     double leftover;
+    double Yearly_leftover;
     
 cout << "What is your monthly net income?: ";   // ask for users monthly net income.
 cin >> income;  // attach income variable to income input.
@@ -32,8 +33,10 @@ if (choice == "yes"){   //if user puts yes then asks for following input.
     cin >> fun; // attach fun variable to fun expense.
 
     double leftover = income - food - housing - transportation - fun;   // calculation for left over money.
+    double Yearly_leftover = leftover * 12;
     cout << fixed << setprecision(2);   // limits output to 2 decimal points.
-    cout << "You will have: $" << leftover << " at the end of the month!";  // output
+    cout << "You will have: $" << leftover << " at the end of the month! \n";  // output
+    cout << "You will have: $" << Yearly_leftover << " at the end of the year!";
     
     
 
